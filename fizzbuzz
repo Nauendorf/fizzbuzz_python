@@ -1,19 +1,31 @@
 class FizzBuzz:
-
     is_m_three: bool = False
     is_m_five: bool = False
+    r = ("Fizz", "Buzz", "FizzBuzz")
 
     def __init__(self):
-        print(self.is_m_three)
+        pass
 
     @staticmethod
-    def is_multiple(num: int):
+    def is_multiple(self, num: int):
 
         if num % 3 == 0:
-            return True
+            self.is_m_three = True
+            return self.r[0]
         elif num % 5 == 0:
-            return True
-        # elif (num )
+            self.is_m_five = True
+            return self.r[1]
+        elif self.is_m_three and self.is_m_five:
+            return self.r[2]
+        else:
+            return num
+
+    @staticmethod
+    def is_multiple_switch(self, num: int):
+        pass
 
 
-print(FizzBuzz().is_multiple(3))
+i = 0
+while i < 100:
+    print(FizzBuzz().is_multiple(FizzBuzz, i))
+    i += 1
