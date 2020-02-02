@@ -1,0 +1,22 @@
+
+
+class TestClass(object):
+    # This is a class variable. When you create an instance of this class you'll have access to it.
+    text = "Hello World"
+
+    # This is a special class method named __init__
+    # This method will run when an instance of this class is created. At the moment it's empty.
+    # pass tells the interpreter to ignore the lack of code so you don't get an error.
+    def __init__(self):
+        pass
+
+    # This is a static method. I can access it via its class.
+    @staticmethod
+    def say_hello():
+        value = input("Hello, what's your name?")
+        print("Wow! Hi there, " + value + ".. how are you?")
+
+
+class_instance = TestClass()  # <-- This is how you can create an instance of your class.
+class_instance.say_hello()  # <-- This is how you call a method within your class.
+print(class_instance.text)  # <-- This is how you access a class variable.

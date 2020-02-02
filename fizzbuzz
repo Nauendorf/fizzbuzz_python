@@ -1,0 +1,19 @@
+class FizzBuzz:
+
+    is_m_three: bool = False
+    is_m_five: bool = False
+
+    def __init__(self):
+        print(self.is_m_three)
+
+    @staticmethod
+    def is_multiple(num: int):
+
+        if num % 3 == 0:
+            return True
+        elif num % 5 == 0:
+            return True
+        # elif (num )
+
+
+print(FizzBuzz().is_multiple(3))
