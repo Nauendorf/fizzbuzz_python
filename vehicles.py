@@ -25,12 +25,12 @@ class Car(Vehicle):
 class Plane(Vehicle):
     wings = ""
 
-    """ # If you uncomment this method and comment the print on line 36 you'll see how __init__ is processed when 
+    # If you uncomment this method and comment the print on line 36 you'll see how __init__ is processed when
         # inheritance is in play and how the interpreter prioritises classes  
     def __init__(self):
         super().__init__()
         print("Created Plane")
-    """
+    """ """
     print("Created Plane")
 
     def get_plane(self):
@@ -43,8 +43,13 @@ class Plane(Vehicle):
 
 
 vh = Vehicle()
+vh.engine = "good one"
 car = Car()
 plane = Plane()  # <-- notice the position of this method call in the terminal output
+plane.fuel_vol = "lots"
+
+
+print(plane.get_plane())
 
 
 
