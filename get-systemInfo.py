@@ -1,5 +1,6 @@
+#!/usr/bin/python
 import platform as p
-import os as o
+import sys
 
 
 class SystemInfo(object):
@@ -13,6 +14,11 @@ class SystemInfo(object):
 
 
 system = SystemInfo()
-print(system.get().__str__().replace(',', '\n'))
-
+if len(sys.argv) > 1:
+    if sys.argv[1] == '--help':
+        print("Helpful things!")
+    else:
+        print("Unexpected parameter...")
+else:
+    print(system.get().__str__().replace(',', '\n'))
 
