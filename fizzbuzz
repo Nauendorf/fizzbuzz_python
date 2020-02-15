@@ -1,3 +1,5 @@
+import random
+
 class FizzBuzz(object):
 
     def is_multiple(self, num: int):
@@ -19,10 +21,8 @@ class FizzBuzz(object):
 
 
 # Pass every number from 1 to 100 to the is_multiple method
-i = 1
-while i < 100:
+for i in range(1, 100):
     class_fizzbuzz = FizzBuzz()
     print(class_fizzbuzz.is_multiple(i))
-    i += 1
 
 

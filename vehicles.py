@@ -26,7 +26,7 @@ class Plane(Vehicle):
     wings = ""
 
     # If you uncomment this method and comment the print on line 36 you'll see how __init__ is processed when
-        # inheritance is in play and how the interpreter prioritises classes  
+    # inheritance is in play and how the interpreter prioritises classes
     def __init__(self):
         super().__init__()
         print("Created Plane")
